@@ -3,7 +3,7 @@
 Trabajo Final Integrador (TFI) — Procesamiento de Lenguaje Natural  
 ---
 
-## 📋 Descripción
+## Descripción
 
 Sistema de recomendación de contenido que utiliza técnicas de NLP para sugerir películas en español a partir de perfiles de usuario simulados. El sistema implementa y compara tres enfoques basados en similitud semántica sobre sinopsis, géneros y demás atributos cinematográficos.
 
