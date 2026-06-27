@@ -12,7 +12,7 @@ Sistema de recomendación de contenido que utiliza técnicas de NLP para sugerir
 
 ---
 
-## 🗂️ Estructura del repositorio
+## Estructura del repositorio
 
 ```
 ├── notebooks/
@@ -38,7 +38,7 @@ Sistema de recomendación de contenido que utiliza técnicas de NLP para sugerir
 
 ---
 
-## 🚀 Enfoques implementados
+## Enfoques implementados
 
 ### Enfoque 1 — Sentence Transformers
 Embeddings de oraciones con el modelo multilingüe `paraphrase-multilingual-MiniLM-L12-v2`. El perfil del usuario se representa como el promedio de los embeddings de las sinopsis de películas valoradas positivamente, y se rankean las películas por similitud coseno.
@@ -54,7 +54,7 @@ Se exploró modelado de tópicos con BERTopic como cuarto enfoque. Fue descartad
 
 ---
 
-## 📊 Evaluación
+## Evaluación
 
 La evaluación se realizó sobre los **9 perfiles definidos** utilizando métricas basadas en solapamiento de géneros cinematográficos:
 
@@ -68,7 +68,7 @@ La evaluación se realizó sobre los **9 perfiles definidos** utilizando métric
 Los 5 perfiles ambiguos se reportan por separado en las tablas del informe.
 ---
 
-## 🤖 Configuración del LLM (Enfoques 2 y 3)
+## Configuración del LLM (Enfoques 2 y 3)
 
 Los enfoques 2 y 3 requieren acceso a un LLM. El proyecto usa `gemini-2.5-flash-lite` disponible en Google Colab:
 
@@ -81,7 +81,7 @@ from google.colab import ai as colab_ai
 
 ---
 
-## 🔬 Resultados principales
+## Resultados principales
 
 Los tres enfoques superan un baseline aleatorio en métricas de género. El Enfoque 2 (ST + LLM) mostró la mejor capacidad para capturar preferencias implícitas del usuario, mientras que el Enfoque 3 (TF-IDF + keywords) resultó más sensible a la calidad de las keywords extraídas.
 
@@ -89,7 +89,7 @@ Para el análisis completo, ver `informe/informe_grupo2.pdf`.
 
 ---
 
-## 🔭 Trabajo futuro
+## Trabajo futuro
 
 - Enriquecer el corpus con el resumen de reseñas de usuarios que provee IMDb, para capturar atributos hoy no evaluables (calidad percibida, ritmo, estilo).
 - Reemplazar la clasificación discreta del LLM por una asignación continua de pesos a query e historial, en lugar de un mapeo fijo por categoría.
